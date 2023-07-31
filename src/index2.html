@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -97,9 +98,10 @@
               <h1 class="mb-2 text-5xl sm:text-7xl font-roboto text-gray-700">
                 Husni Robani
               </h1>
-              <p class="text-3xl sm:text-5xl font-semibold text-gray-500">
-                I Build What I Know
-              </p>
+              <p
+                id="typed"
+                class="text-3xl sm:text-5xl font-semibold text-gray-500"
+              ></p>
               <p
                 class="w-full md:w-2/3 lg:w-1/2 mt-6 font-normal text-gray-500"
               >
@@ -316,4 +318,11 @@
       </div>
     </div>
   </body>
+  <script>
+    var typed = new Typed("#typed", {
+      strings: ["Build what i know", "Web Dev", "Software Engineer"],
+      typeSpeed: 50,
+      loop: true,
+    });
+  </script>
 </html>
