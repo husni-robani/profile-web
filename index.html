@@ -12,21 +12,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/dist/output.css" rel="stylesheet" />
+    <link href="/src/output.css" rel="stylesheet" />
     <title>Document</title>
   </head>
   <body>
     <div class="mb-10">
       <!-- //navbar -->
       <nav
-        class="h-40 top-0 left-0 right-0 flex px-20 py-5 md:flex-row-reverse bg-white p-3"
+        class="h-40 top-0 left-0 right-0 absolute flex px-20 py-5 md:flex-row-reverse p-3 z-20"
       >
         <!-- button -->
         <div class="flex flex-col justify-center items-center mx-auto md:m-0">
           <div class="peer text-gray-500 font-medium hover:text-gray-800">
-            <a href=""></a>
             <a
-              href="/doc/Husni Robani (resume).pdf"
+              href="/doc/husnirobani_resume.pdf"
               target="_blank"
               class="py-1 px-6"
               >Resume</a
@@ -39,12 +38,13 @@
       </nav>
 
       <!-- //content -->
-      <div class="relative lg:flex mb-44 mt-20">
+      <div class="relative lg:flex mb-44 z-0">
         <!-- Side content 1 -->
         <div
           class="hidden lg:flex lg:flex-col justify-end fixed top-1/2 bottom-0 left-0 items-center w-1/12"
         >
           <div>
+            <!-- GitHub -->
             <a href="https://github.com/husni-robani" target="_blank"
               ><svg
                 class="transition ease-in-out hover:scale-110 duration-300 fill-gray-800 hover:fill-gray-500"
@@ -57,8 +57,9 @@
                   d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"
                 /></svg
             ></a>
+            <!-- LinkedIn -->
             <a
-              href="https://www.linkedin.com/in/husni-robani-43a417234/"
+              href="https://www.linkedin.com/in/husni-robani-706a78225/"
               target="_blank"
             >
               <svg
@@ -90,29 +91,31 @@
           <div class="h-24 border-l-2 border-solid border-gray-800 mt-7"></div>
         </div>
         <!-- Main Content -->
-        <div class="w-11/12 mx-auto lg:w-10/12 p-5 bg-white">
+        <div class="w-11/12 mx-auto lg:w-10/12 p-5">
           <!-- Hero section -->
-          <div class="lg:max-w-5xl mx-auto">
-            <div class="container bg-white">
-              <p class="-mb-1 text-lg font-roboto text-gray-400">hi, im</p>
-              <h1 class="mb-2 text-5xl sm:text-7xl font-roboto text-gray-700">
+          <div class="lg:max-w-5xl mx-auto flex items-center h-screen">
+            <div class="container">
+              <p class="-mb-1 text-lg font-roboto text-gray-400">
+                hi, my name is
+              </p>
+              <h1 class="mb-2 text-6xl md:text-8xl font-roboto text-gray-700">
                 Husni Robani
               </h1>
-              <p
+              <span
                 id="typed"
-                class="text-3xl sm:text-5xl font-semibold text-gray-500"
-              ></p>
+                class="text-4xl md:text-6xl font-semibold text-gray-300"
+              ></span>
               <p
-                class="w-full md:w-2/3 lg:w-1/2 mt-6 font-normal text-gray-500"
+                class="w-full md:w-2/3 lg:w-1/2 mt-7 font-normal text-gray-500 text-lg"
               >
-                im a student of computer science who try to be a software
-                engineer, haven't much experience yet, and someone who use
-                framework without fundamentals-i'll try to learn someday.
+                8th semester computer science student, passionate about
+                mastering software development and eager to apply my knowledge
+                to real-world projects.
               </p>
             </div>
           </div>
           <!-- My Bio -->
-          <div class="lg:max-w-4xl mx-auto mt-64">
+          <div class="lg:max-w-4xl mx-auto">
             <div class="w-full lg:max-w-md h-5 border-b-2 border-gray-400 mb-6">
               <span
                 class="bg-white pr-4 font-bold text-gray-700 font-roboto text-4xl"
@@ -121,18 +124,19 @@
             </div>
             <!-- my bio content -->
             <div class="lg:flex">
-              <div class="lg:mr-20 lg:w-1/2">
+              <div class="lg:mr-20 lg:w-1/2 text-lg">
                 <p>
                   <br />
-                  Hello! i'm bani, an active sixth-semester student of
+                  Hello! i'm bani, an active eight-semester student of
                   informatics engineering Widyatama University
                   <br /><br />
-                  Throughout my studies, I've gained hands-on experience in
-                  various programming languages, frameworks, and web
-                  development, including java, php, javascript, html, css,
-                  vue.js, laravel, tailwind. Beside of that i've experience of
-                  building web apps which is still used by university and still
-                  live on the internet.
+                  Throughout my studies, i'v gained hands-on experience in
+                  developing various applications, especially websites,
+                  utilizing multiple programming languages and frameworks such
+                  as Python, JavaScript, PHP, Flask, Laravel, Vue, and React.
+                  Recently I created a deep learning model for my thesis project
+                  using the PyTorch framework, which was then integrated with a
+                  REST API using Flask as framework for model services
                   <br /><br />
                   I also enjoy of coding and excited to bring my skills and
                   knowledge to the industry and contribute to the development of
@@ -164,7 +168,7 @@
               <div class="mt-4">
                 <div class="flex w-full">
                   <div class="bg-gray-200 shadow-md p-1 m-1 rounded-md">
-                    Java
+                    Python
                   </div>
                   <div class="bg-gray-200 shadow-md p-1 m-1 rounded-md">
                     PHP
@@ -176,10 +180,13 @@
                     Laravel
                   </div>
                   <div class="bg-gray-200 shadow-md p-1 m-1 rounded-md">
+                    Flask
+                  </div>
+                  <div class="bg-gray-200 shadow-md p-1 m-1 rounded-md">
                     Tailwind
                   </div>
                   <div class="bg-gray-200 shadow-md p-1 m-1 rounded-md">
-                    vue.js
+                    React
                   </div>
                 </div>
                 <div></div>
@@ -187,35 +194,218 @@
             </div>
           </div>
           <!-- Project -->
-          <div class="lg:max-w-4xl mx-auto mt-64">
+          <div class="lg:max-w-4xl mx-auto mt-52">
             <!-- title -->
-            <div class="w-full h-5 border-b-2 border-gray-400 text-2xl mb-6">
+            <div class="w-full h-5 border-b-2 border-gray-400 text-2xl mb-16">
               <span
                 class="bg-white pr-4 font-bold text-gray-700 font-roboto text-4xl"
-                >project that I've contributed</span
+                >project I've built</span
               >
             </div>
             <!-- projects list -->
-            <div class="flex flex-col items-center">
-              <a href="https://akre-fisip.widyatama.ac.id/login">
+            <div
+              class="flex flex-col items-center relative gap-y-28 lg:gap-y-40"
+            >
+              <!-- project 1 -->
+              <div
+                class="flex flex-col items-center w-2/3 lg:items-start lg:flex-row lg:w-full"
+              >
+                <!-- image -->
                 <div
-                  class="group flex justify-center w-96 h-48 md:w-[576px] md:h-72 mt-10 border rounded-lg bg-cover cursor-pointer"
-                  style="background-image: url('/image/akre-fisip.png')"
+                  class="group w-[576px] h-72 relative border rounded-lg bg-cover"
+                  style="background-image: url('/image/LSTM_architecture.png')"
+                ></div>
+                <!-- content -->
+                <div
+                  class="lg:w-1/2 lg:absolute bg-transparent right-0 text-right"
                 >
-                  <div
-                    class="lg:hidden bg-gray-800/70 lg:filter-none flex-col group-hover:flex justify-center items-start group-hover:backdrop-blur-[2px] group-hover:bg-gray-800/70 w-full rounded-xl p-10"
-                  >
-                    <h1 class="text-2xl font-bold font-roboto text-white">
-                      Akre-Fisip
+                  <!-- title -->
+                  <div class="flex flex-col items-end">
+                    <p class="text-sm font-roboto text-gray-400">
+                      featured project
+                    </p>
+                    <h1
+                      class="text-2xl font-bold font-roboto text-slate-700 w-2/3"
+                    >
+                      Text Classifier Service
                     </h1>
-                    <p class="text-gray-200 mt-2">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Ab, illum! Harum saepe rerum, repudiandae ullam blanditiis
-                      consequatur deleniti qui accusamus.
+                  </div>
+                  <!-- description -->
+                  <div class="bg-gray-100 p-2 rounded-md shadow-md mt-4">
+                    <p>
+                      Developed a deep learning model using LSTM algorithm in
+                      PyTorch for abstract classification, integrated with a
+                      Flask API. Completed as a thesis project, managing all
+                      aspects from model development to API deployment and
+                      documentation.
                     </p>
                   </div>
+                  <!-- stack -->
+                  <div class="flex flex-row-reverse gap-2 text-sm mt-4">
+                    <span class="flex flex-wrap flex-row-reverse gap-2 w-2/3">
+                      <span>Python</span>
+                      <span>Flask</span>
+                      <span>Pytorch</span>
+                    </span>
+                  </div>
+                  <!-- link -->
+                  <div class="flex flex-row-reverse gap-2 mt-4">
+                    <a
+                      href="https://github.com/husni-robani/service_api_for_lstm_model"
+                      target="_blank"
+                      ><svg
+                        class="fill-gray-800 hover:fill-gray-500"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 30 30"
+                        width="30px"
+                        height="30px"
+                      >
+                        <path
+                          d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"
+                        /></svg
+                    ></a>
+                    <a
+                      href="https://github.com/husni-robani/LSTM-multi-class-text-classification"
+                      target="_blank"
+                      ><svg
+                        class="fill-gray-800 hover:fill-gray-500"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 30 30"
+                        width="30px"
+                        height="30px"
+                      >
+                        <path
+                          d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"
+                        /></svg
+                    ></a>
+                  </div>
                 </div>
-              </a>
+              </div>
+              <!-- project 2 -->
+              <div
+                class="flex flex-col items-center w-2/3 lg:items-start lg:flex-row-reverse lg:w-full"
+              >
+                <!-- image -->
+                <div
+                  class="lg:block group w-[576px] h-72 relative border rounded-lg bg-cover"
+                  style="background-image: url('/image/himatif_vote.png')"
+                ></div>
+                <!-- content -->
+                <div
+                  class="lg:w-1/2 lg:absolute bg-transparent left-0 text-left"
+                >
+                  <!-- title -->
+                  <div class="flex flex-col">
+                    <p class="text-sm font-roboto text-gray-400">
+                      featured project
+                    </p>
+                    <h1
+                      class="text-2xl font-bold font-roboto text-slate-700 w-2/3"
+                    >
+                      HIMATIF Voting System
+                    </h1>
+                  </div>
+                  <!-- description -->
+                  <div class="bg-gray-100 p-2 rounded-md shadow-md mt-4">
+                    <p>
+                      The HIMATIF Voting System is a web application designed
+                      for electing organization leaders. As a full-stack
+                      engineer, I developed this project independently, handling
+                      all aspects from UI/UX design to frontend and backend
+                      development, and deployment.
+                    </p>
+                  </div>
+                  <!-- stack -->
+                  <div class="flex flex-row gap-2 text-sm mt-4">
+                    <span class="flex flex-wrap flex-row gap-2 w-2/3">
+                      <span>PHP</span>
+                      <span>Javascript</span>
+                      <span>Vue Js</span>
+                      <span>Tailwind</span>
+                      <span>Laravel</span>
+                      <span>Inertia</span>
+                      <span>MySQL</span>
+                    </span>
+                  </div>
+                  <!-- link -->
+                  <div class="flex flex-row gap-2 mt-4">
+                    <a
+                      href="https://github.com/husni-robani/vote-system/tree/main"
+                      target="_blank"
+                      ><svg
+                        class="fill-gray-800 hover:fill-gray-500"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 30 30"
+                        width="30px"
+                        height="30px"
+                      >
+                        <path
+                          d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"
+                        /></svg
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- project 3 -->
+              <div
+                class="flex flex-col items-center w-2/3 lg:items-start lg:flex-row lg:w-full"
+              >
+                <!-- image -->
+                <div
+                  class="lg:block group w-[576px] h-72 relative border rounded-lg bg-cover"
+                  style="background-image: url('/image/image.png')"
+                ></div>
+                <!-- content -->
+                <div
+                  class="lg:w-1/2 lg:absolute bg-transparent right-0 text-right"
+                >
+                  <!-- title -->
+                  <div class="flex flex-col items-end">
+                    <p class="text-sm font-roboto text-gray-400">
+                      featured project
+                    </p>
+                    <h1
+                      class="text-2xl font-bold font-roboto text-slate-700 w-2/3"
+                    >
+                      API Services - Zakat APP
+                    </h1>
+                  </div>
+                  <!-- description -->
+                  <div class="bg-gray-100 p-2 rounded-md shadow-md mt-4">
+                    <p>
+                      This project was developed for the PKM program. Riyadhul
+                      Jannah Zakat App, where I served as the backend engineer,
+                      focused on developing the backend system supporting the
+                      application
+                    </p>
+                  </div>
+                  <!-- stack -->
+                  <div class="flex flex-row-reverse gap-2 text-sm mt-4">
+                    <span class="flex flex-wrap flex-row-reverse gap-2 w-2/3">
+                      <span>PHP</span>
+                      <span>Laravel</span>
+                      <span>MySQL</span>
+                    </span>
+                  </div>
+                  <!-- link -->
+                  <div class="flex flex-row-reverse gap-2 mt-4">
+                    <a
+                      href="https://github.com/husni-robani/riyadhul-zakat-service"
+                      target="_blank"
+                      ><svg
+                        class="fill-gray-800 hover:fill-gray-500"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 30 30"
+                        width="30px"
+                        height="30px"
+                      >
+                        <path
+                          d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"
+                        /></svg
+                    ></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <!-- Contact -->
@@ -226,7 +416,7 @@
               </h1>
               <p class="text-center text-gray-500 font-semibold">
                 Let's connect and discuss any new opportunities and i'll get
-                back to you as soon as possible
+                back to you asap
               </p>
             </div>
             <!-- button -->
@@ -249,9 +439,7 @@
         <div
           class="hidden lg:flex lg:flex-col justify-end fixed top-1/2 bottom-0 right-0 items-center w-1/12"
         >
-          <div
-            class="rotate-90 transition ease-in-out hover:scale-110 duration-300 m-16"
-          >
+          <div class="rotate-90 m-16">
             <a
               href="mailto:husnir2005@gmail.com"
               target="_blank"
@@ -268,7 +456,12 @@
       <div class="flex flex-col max-w-4xl mx-auto">
         <!-- link -->
         <div class="mx-auto flex flex-row lg:hidden">
-          <a href="#" class="mx-2">
+          <!-- LinkedIn -->
+          <a
+            href="https://www.linkedin.com/in/husni-robani-706a78225/"
+            target="_blank"
+            class="mx-2"
+          >
             <svg
               class="fill-gray-500 hover:fill-gray-800"
               xmlns="http://www.w3.org/2000/svg"
@@ -281,7 +474,12 @@
               />
             </svg>
           </a>
-          <a href="#" class="mx-2">
+          <!-- GitHub -->
+          <a
+            href="https://github.com/husni-robani"
+            target="_blank"
+            class="mx-2"
+          >
             <svg
               class="fill-gray-500 hover:fill-gray-800"
               xmlns="http://www.w3.org/2000/svg"
@@ -294,7 +492,12 @@
               />
             </svg>
           </a>
-          <a href="#" class="mx-2">
+          <!-- instagram -->
+          <a
+            href="https://www.instagram.com/husnirb/"
+            target="_blank"
+            class="mx-2"
+          >
             <svg
               class="fill-gray-500 hover:fill-gray-800"
               xmlns="http://www.w3.org/2000/svg"
@@ -312,7 +515,13 @@
         <div class="mx-auto text-gray-500">
           <p>
             handcrafted by me inspired by
-            <a href="#" class="hover:text-gray-900">Brittany Chiang</a> ©️2023
+            <a
+              href="https://brittanychiang.com"
+              target="_blank"
+              class="hover:text-gray-900"
+              >Brittany Chiang</a
+            >
+            ©️2023
           </p>
         </div>
       </div>
@@ -320,8 +529,18 @@
   </body>
   <script>
     var typed = new Typed("#typed", {
-      strings: ["Build what i know", "Web Dev", "Software Engineer"],
+      strings: [
+        "Developer-in-Training",
+        "Craft digital experiences",
+        "Junior Developer",
+        "Backend engineer",
+      ],
       typeSpeed: 50,
+      backSpeed: 50,
+      backDelay: 2000,
+      cursorChar: "_",
+      shuffle: false,
+      smartBackspace: false,
       loop: true,
     });
   </script>
